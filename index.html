@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="content">
+            <h1>Popup Chat Window</h1>
+            <p>Click the button to open chat form</p>
+        </div>
+        
+        <button class="open-button" onclick="openform()">Chat</button>
+        <div class="chat" id="myform">
+            <form class="container" action="">
+                <h2>Chat</h2>
+                <label for="msg"> <b>Message</b> </label>
+                <textarea placeholder="type message..." name="msg" id="" cols="30" rows="10"></textarea>
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn-cancel" onclick="closeform()">Close</button>
+            </form>
+
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

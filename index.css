@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: change 2s infinite;
+}
+.content h1,p{
+    text-align: center;
+}
+.content p{
+    animation: animate 4s infinite;
+}
+.open-button{
+    background-color: blueviolet;
+    width: 280px;
+    right: 28px;
+    color: cornsilk;
+    padding: 16px 20px;
+    cursor: pointer;
+    opacity: .8;
+    position: fixed;
+    bottom: 28px;
+}
+.chat{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border:  3px solid #f1f1f1 ;
+}
+.container{
+    max-width: 300px;
+    padding: 10px;
+    background-color: cornsilk;
+}
+.container textarea{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    background: #f1f1f1;
+    min-height: 200px;
+}
+
+.container textarea:focus{
+    background-color: #dddd;
+}
+.btn{
+    background-color: rgb(90, 79, 238);
+    color: rgb(5, 5, 5);
+    padding: 16px ;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: .8;
+}
+.btn-cancel{
+    background-color: darkred;
+    color: rgb(255, 255, 255);
+    padding: 16px ;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: .8;
+}
+.container .btn:hover, .open-button:hover{
+    opacity: 1;
+}
+@keyframes change{
+    0%{background-color: darkslategray;}
+    30%{background-color: forestgreen;}
+    50%{background-color: greenyellow;}
+    70%{background-color: lightseagreen;}
+    100%{background-color: olivedrab;}
+}
+@keyframes animate{
+    from{
+        transform: scale(.8);
+    }
+    to{
+        transform: scale(1.4);
+    }
+}
+
+
+
+
+
